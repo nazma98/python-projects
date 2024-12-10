@@ -11,6 +11,9 @@ def reset():
     greeting_label.config(text="")
     name_entry.delete(0, tk.END)
 
+def close_app():
+    root.destroy()
+
 root = tk.Tk()
 root.title("Greeting App")
 root.geometry("400x300")
