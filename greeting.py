@@ -10,7 +10,7 @@ def greet_user():
 def reset():
     greeting_label.config(text="")
     name_entry.delete(0, tk.END)
-    
+
 root = tk.Tk()
 root.title("Greeting App")
 root.geometry("400x300")
@@ -26,6 +26,9 @@ greet_button.pack(pady=5)
 
 reset_button = tk.Button(root, text="Reset", command=reset, font=("Arial", 12), bg="gray")
 reset_button.pack(padx=5)
+
+close_button = tk.Button(root, text="Close App", command=close_app, font=("Arial", 12), bg="red")
+close_button.pack(pady=5)
 
 greeting_label = tk.Label(root, text="", font=("Arial", 14), fg="blue")
 greeting_label.pack(pady=10)
