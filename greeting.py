@@ -13,4 +13,7 @@ name_entry.pack(pady=5)
 greet_button = tk.Button(root, text="Greet Me", command=greet_user, font=("Arial", 12))
 greet_button.pack(pady=5)
 
+greeting_label = tk.Label(root, text="", font=("Arial", 14), fg="blue")
+greeting_label.pack(pady=10)
+
 root.mainloop()
