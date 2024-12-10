@@ -1,5 +1,12 @@
 import tkinter as tk
 
+def greet_user():
+    name = name_entry.get()
+    if name.strip():
+        greeting_label.config(text=f"Hello, {name}!")
+    else:
+        greeting_label.config(text="Please enter your name.")
+
 root = tk.Tk()
 root.title("Greeting App")
 root.geometry("400x300")
