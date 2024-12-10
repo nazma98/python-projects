@@ -7,6 +7,10 @@ def greet_user():
     else:
         greeting_label.config(text="Please enter your name.")
 
+def reset():
+    greeting_label.config(text="")
+    name_entry.delete(0, tk.END)
+    
 root = tk.Tk()
 root.title("Greeting App")
 root.geometry("400x300")
